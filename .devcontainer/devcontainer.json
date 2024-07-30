@@ -1,0 +1,43 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+    "name": "AIStudio RAG Copilot",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+
+    // TODO: Validate these host requirements
+	"hostRequirements": {
+		"cpus": 4,
+		"memory": "4gb",
+		"storage": "64gb"
+	 },
+
+    // TODO: Remove unused features
+    "features": {
+        "ghcr.io/devcontainers/features/azure-cli:1": {
+            "installBicep": true,
+            "extensions": "ml"
+        },
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/azure/azure-dev/azd:latest": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+
+    // TODO: Remove unused extensions
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-azuretools.azure-dev",
+                "prompt-flow.prompt-flow",
+                "ms-toolsai.prompty",
+                //"ms-azuretools.vscode-docker",
+                //"ms-azuretools.vscode-bicep",
+                //"rogalmic.bash-debug"
+            ]
+        }
+    }
+}
