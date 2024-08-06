@@ -65,6 +65,8 @@ Check out these links to useful tutorials and documentation for self-guided lear
 
     Watch this space for a link to a Microsoft Learn collection that captures all the required documentation and resources you will need for self-guided exploration of the workshop and related technologies and tools.
 
+Happy Learning!
+
 ---
 
 **Next Steps |** Get Started  🚀
